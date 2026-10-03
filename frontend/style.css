@@ -1,0 +1,277 @@
+/* =========================
+   Summary Cards
+   ========================= */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   Body
+   ========================= */
+
+body {
+    background-color: #f8d7e3;
+    color: #4a1830;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Navbar
+   ========================= */
+
+.navbar {
+    background-color: #a12463 !important;
+    box-shadow: 0 2px 10px rgba(161, 36, 99, 0.25);
+    border-radius: 0 0 12px 12px;
+}
+
+.navbar .container {
+    justify-content: center;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff !important;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand {
+    font-size: 22px;
+}
+
+.navbar .nav-link {
+    font-size: 17px;
+}
+
+
+/* =========================
+   Page Heading
+   ========================= */
+
+h1 {
+    text-align: center;
+    color: #a12463;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+h2,
+h3 {
+    color: #4a1830;
+}
+
+
+/* =========================
+   Cards
+   ========================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(161, 36, 99, 0.15);
+    background-color: #fceaf1;
+}
+
+.summary-cards .card {
+    text-align: center;
+    padding: 18px;
+    border-radius: 16px;
+}
+
+.summary-cards .card h5 {
+    color: #d43b62;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Georgia, serif;
+}
+
+.summary-cards .card h3 {
+    color: #a12463;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Form
+   ========================= */
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Form Labels */
+
+form label {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: #a12463;
+    font-size: 16px;
+}
+
+
+/* Inputs */
+
+.form-control,
+.form-select {
+    border: 1px solid #d989a5;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background-color: #fceaf1;
+    color: #4a1830;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #d43b62;
+    box-shadow: 0 0 0 0.15rem rgba(212, 59, 98, 0.2);
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 9px 18px;
+}
+
+
+/* Add Expense Button */
+
+form button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+/* Submit and Edit Button */
+
+.btn-primary {
+    background-color: #a12463;
+    border-color: #a12463;
+}
+
+.btn-primary:hover {
+    background-color: #7f174c;
+    border-color: #7f174c;
+}
+
+
+/* Delete Button */
+
+.btn-danger {
+    background-color: #d43b62;
+    border-color: #d43b62;
+}
+
+.btn-danger:hover {
+    background-color: #b52b50;
+    border-color: #b52b50;
+}
+
+
+/* =========================
+   Filter
+   ========================= */
+
+label[for="categoryFilter"],
+#categoryFilter {
+    font-family: Georgia, serif;
+}
+
+label[for="categoryFilter"] {
+    font-weight: bold;
+    color: #a12463;
+}
+
+
+/* =========================
+   Table
+   ========================= */
+
+.table-container {
+    background-color: #fceaf1;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(161, 36, 99, 0.15);
+}
+
+.table {
+    --bs-table-bg: #f8d7e3;
+    --bs-table-color: #4a1830;
+    --bs-table-border-color: #e8a8bd;
+
+    font-family: Georgia, serif;
+}
+
+.table thead {
+    background-color: #a12463;
+    color: #ffffff;
+}
+
+.table thead th {
+    background-color: #a12463;
+    color: #ffffff;
+    border-color: #a12463;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.table tbody td {
+    font-family: Georgia, serif;
+}
+
+.table tbody tr:hover {
+    background-color: #f1bfd2;
+}
+
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   Modal
+   ========================= */
+
+.modal-content {
+    background-color: #fceaf1;
+    border: none;
+    border-radius: 16px;
+}
+
+.modal-header {
+    background-color: #a12463;
+    color: #ffffff;
+    border-radius: 16px 16px 0 0;
+}
+
+.modal-title {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
