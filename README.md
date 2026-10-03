@@ -43,8 +43,3 @@ all the screenshots that are required in phase 1 and 3 are in the screenshots fi
 ## What was the hardest part?
 
 The hardest part was connecting the frontend to the backend API and understanding how Fetch API and async/await work. At first, it was a little difficult to understand how requests are sent from the frontend and how to wait for the response. I solved this by practicing with Fetch and async/await and using them to add, edit, delete, and filter expenses. I also added validation and error messages to handle invalid input and failed requests.
-
-## github repo 
-
-## DEMO Link :
-https://youtu.be/v1RpcxQwyfo
